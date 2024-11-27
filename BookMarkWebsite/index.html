@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>My Bookmarks</h1>
+
+    <p>This is a Bookmark Manager. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ducimus amet ut, nam, earum vero dolore voluptates ipsa quas, alias inventore harum eligendi laudantium illo sunt molestias excepturi et dolorem.</p>
+
+    <!-- Inline styling can be done using style="" attribute -->
+    <h2 style="color: blue;">Primary Bookmarks</h2>
+    <!-- Opens in same tab -->
+    <p>
+        <a href="https://www.google.com">Open Google</a>
+    </p>
+    <!-- Opens in a new tab : target="_blank" -->
+    <!-- Prohibits new tab from potentially manipulating the original page : rel="noopener" this prevents phishing attacks -->
+    <!-- rel="noreferrer" additionally hides the Referer header from being sent to the linked site -->
+    <p>
+        <a rel="noopener" target="_blank" href="https://www.youtube.com">Open Youtube</a>
+    </p>
+
+    <h2 style="color: grey;">Secondary Bookmarks</h2>
+    <p>
+        <a href="https://www.hianime.to">Open Hianime</a>
+    </p>
+</body>
+</html>
