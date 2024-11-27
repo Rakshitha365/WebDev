@@ -6,9 +6,64 @@
     <title>Image</title>
 </head>
 <body>
+     <!-- Always provide height or width as the image is adjusted correspondingly -->
+        
+    <!-- Attributes -->
+    <!-- src : Specifies the path or URL of the image. -->
+        <!-- Path to image file can be 
+                1.Relative : ./assets/skz_maniac.jpg
+                2.Absolute : https://tse1.mm.bing.net/th?id=OIP.DAhzAwjd9SQULF62yifrFAHaDq&pid=Api&P=0&h=180 -->
+    <!-- alt : Provides alternative text that describes the image, important for accessibility and when the image fails to load. -->
+
+    <!-- src and alt are compulsory attributes -->
+
+    <!-- width and height : Set the dimensions of the image (in pixels or percentage).  -->
+    <!-- title : Adds a tooltip that appears when you hover over the image. -->
+    <!-- loading : Lazy loading for better performance. -->
+    <!-- crossorigin : Specifies if the image resource should include credentials when fetched. -->
+
+
+
+
+
+
+
+
+
+    <!-- Relative Path -->
     <p>
-        <img height="230" src="./assets/skz.jpg" alt="Stray Kids Everywhere All Around The World" />
+        <img src="./assets/skz_maniac.jpg" alt="Stray Kids Maniac" />
     </p>
-    <img height="230" src="./assets/sk.jpg" alt="Stray Kids Everywhere All Around The World" />
+    <!-- Absolute Path -->
+    <p>
+        <img height="230" src="https://tse1.mm.bing.net/th?id=OIP.DAhzAwjd9SQULF62yifrFAHaDq&pid=Api&P=0&h=180" alt="Stray Kids Maniac" />
+    </p>
+    <!-- Wrong image path leads to load error : alt will be printed -->
+    <p>
+        <img height="230" src="./assets/skz_thunder.jpg" alt="Stray Kids Thunderous" />
+    </p>
+    <!-- Height -->
+    <p>
+        <img height="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" />
+    </p>
+    <!-- Width -->
+    <p>
+        <img width="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" />
+    </p>
+    <!-- title -->
+    <p>
+        <img width="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" title="Stray Kids"/>
+    </p>
+    <!-- loading -->
+    <p>
+        <img width="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" loading="eager"/>
+    </p>
+    <p>
+        <img width="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" loading="lazy"/>
+    </p>
+    <!-- crossorigin -->
+    <p>
+        <img width="230" src="./assets/skz_thunderous.jpg" alt="Stray Kids Thunderous" crossorigin="anonymous"/>
+    </p>
 </body>
 </html>
