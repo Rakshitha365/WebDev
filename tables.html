@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- Basic Structure -->
+    <!-- tr : table row -->
+    <!-- th : table header cell(bold and centered by default) -->
+    <!-- td : table data cell -->
+
+
+    <!-- Attributes -->
+    <!-- border : Adds a border to table -->
+    <!-- cellpadding : Space inside cells -->
+    <!-- cellspacing : Space between cells -->
+    <!-- height and width : Sets the table's dimensions -->
+    <!-- align : Aligns the table on the page  -->
+    <!-- colspan : Spans a cell across multiple columns -->
+    <!-- rowspan : Spans a cell across multiple rows -->
+
+
+    <table border="3" align="center" cellpadding="5" cellspacing="5">
+        <caption style="color: blue;">Student Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>DOB</th>
+                <th colspan="2">Contact Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kottam Rakshitha</td>
+                <td>CSM</td>
+                <td>09/12/2004</td>
+                <td>7532486910</td>
+                <td rowspan="2">9512684370</td>
+            </tr>
+            <tr>
+                <td>Leena Sanjana</td>
+                <td>IT</td>
+                <td>26/10/2004</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">Total</td>
+                <td colspan="2">2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
