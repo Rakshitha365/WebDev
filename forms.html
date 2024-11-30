@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- action : Specifies the URL where the form data is sent. -->
+    <!-- method : Specifies the HTTP method (e.g., GET or POST) used to send form data. -->
+
+    <!-- Validation -->
+    <!-- <input type="text" name="email" required> -->
+    <!-- <input type="text" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number"> -->
+    <!-- <input type="number" name="age" min="18" max="99"> -->
+
+    <h1>Pick Your Bias</h1>
+    <form method="post">
+        <div>
+            <label for="username">Enter your UserName</label>
+            <input type="text" id="username" name="UserName" placeholder="Enter User Name">
+        </div>
+        <div>
+            <p>
+                <input type="radio" id="bangchan" name="SKZ Members" value="bangchan">
+                <label for="bangchan">Bang Christopher Chan</label>
+            </p>
+            <p>
+                <input type="radio" id="leeknow" name="SKZ Members" value="leeknow">
+                <label for="leeknow">Lee Know</label>
+            </p>
+            <p>
+                <input type="radio" id="changbin" name="SKZ Members" value="changbin">
+                <label for="changbin">Seo Changbin</label>
+            </p>
+            <p>
+                <input type="radio" id="hyunjin" name="SKZ Members" value="hyunjin">
+                <label for="hyunjin">Hwang Hyunjin</label>
+            </p>
+            <p>
+                <input type="radio" id="han" name="SKZ Members" value="han">
+                <label for="han">Han Jisung</label>
+            </p>
+            <p>
+                <input type="radio" id="felix" name="SKZ Members" value="felix">
+                <label for="felix">Lee Felix Yongbok</label>
+            </p>
+            <p>
+                <input type="radio" id="in" name="SKZ Members" value="in">
+                <label for="seungmin">Kim Seungmin</label>
+            </p>
+            <p>
+                <input type="radio" id="seungmin" name="SKZ Members" value="seungmin">
+                <label for="in">I.N.</label>
+            </p>
+        </div>
+
+        <div>
+            <label for="reason">Reason</label>
+            <br />
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <p>Which kpop band fan are you?</p>
+            <p>
+                <input type="checkbox" id="stay" name="stay" value="yes">
+                <label for="stay">Stray Kids</label>
+            </p>
+            <p>
+                <input type="checkbox" id="army" name="army" value="yes">
+                <label for="army">BTS</label>
+            </p>
+            <p>
+                <input type="checkbox" id="blink" name="blink" value="yes">
+                <label for="blink">BlackPink</label>
+            </p>
+        </div>
+        <div>
+            <label for="country">Which country are you from?</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="japan">Japan</option>
+                <option value="korea">Korea</option>
+            </select>
+        </div>
+        
+        <!-- <input type="submit" value="Submit" /> -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
